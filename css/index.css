@@ -1,0 +1,293 @@
+body {
+    /* -webkit-overflow-scrolling:touch;
+   overflow:auto;  */
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: auto;
+}
+
+@font-face {
+    font-family: 'zihun59hao';
+    src: url('../fonts/zihun59hao.otf');
+}
+
+#wx-bnav {
+    display: none !important;
+}
+
+.legion-main {
+    width: 100%;
+    min-height: 100%;
+    background: url(../img/big-bg.jpg) no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    overflow: hidden;
+    padding-bottom: .6rem;
+}
+
+.legion-main img {
+    width: 100%;
+}
+
+.legion-main .top-tit {
+    margin: 0 auto;
+    margin-top: .17rem;
+    width: 5.61rem;
+    opacity: 0;
+    transform: translate(0, .8rem);
+    transition: all 0.8s;
+}
+
+.legion-main-active .top-tit {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.legion-main .top-tit2 {
+    margin-left: .5rem;
+    width: 6.02rem;
+    opacity: 0;
+    /* transform: translate(0,.8rem); */
+    transition: all 0.8s 0.3s;
+}
+
+.legion-main .big-img {
+    margin: 0 auto;
+    margin-top: .16rem;
+    width: 6.89rem;
+    opacity: 0;
+    transform: translate(0, .8rem);
+    transition: all 0.8s 0.3s;
+}
+
+.legion-main-active .big-img {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.legion-main .content-box {
+    width: 100%;
+    position: relative;
+    /* overflow: hidden; */
+    margin-top: .25rem;
+}
+
+.legion-main .content-box .move1 {
+    transition: all 0.8s 0.8s !important;
+}
+
+.legion-main-active .content-box .move1 {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.active2 .content-box .move2 {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.active3 .content-box .move3 {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.active4 .content-box .move4 {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.active5 .content-box .move5 {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.active6 .content-box .move6 {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.legion-main .content-box .txt1 {
+    margin-top: .18rem;
+    font-size: .25rem;
+    font-family: zihun59hao;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.legion-main .content-box .txt1 p {
+    opacity: 0;
+    transform: translate(0, .8rem);
+    transition: all 0.8s;
+}
+
+.legion-main .content-box .minp {
+    transition: all 0.8s 0.8s !important;
+}
+
+.legion-main .content-box .txt1 .p1 {
+    display: inline-block;
+    line-height: .45rem;
+}
+
+.legion-main .content-box .txt1 .p2 {
+    line-height: .45rem;
+    text-align: center;
+}
+
+.legion-main .content-box .img {
+    opacity: 0;
+    transform: translate(0, 0.4rem);
+    transition: all 0.8s 0.4s;
+
+}
+
+.legion-main .content-box .img1 {
+    position: absolute;
+    top: -.15rem;
+    left: .43rem;
+    width: .54rem;
+    height: .45rem;
+}
+
+.legion-main .content-box .img2 {
+    position: absolute;
+    top: .4rem;
+    left: 6.58rem;
+    width: .7rem;
+    height: .33rem;
+}
+
+.legion-main .content-box .img3 {
+    position: absolute;
+    top: 1.15rem;
+    left: .49rem;
+    width: .55rem;
+    height: .42rem;
+}
+
+.legion-main .content-box .img4 {
+    position: absolute;
+    top: 1.85rem;
+    left: 6.7rem;
+    width: 0.43rem;
+    height: 0.42rem;
+}
+
+.legion-main .content-box .img5 {
+    position: absolute;
+    top: 2.6rem;
+    left: .45rem;
+    width: .46rem;
+    height: .43rem;
+}
+
+.legion-main .content-box .img6 {
+    position: absolute;
+    top: 3.1rem;
+    left: 5.5rem;
+    width: 0.27rem;
+    height: 0.37rem;
+}
+
+.legion-main .btn-box {
+    margin: 0 auto;
+    margin-top: .12rem;
+    width: 5.33rem;
+    height: 1.32rem;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+.legion-main .btn-box .btn {
+    width: 2.3rem;
+    height: 1.32rem;
+}
+
+.legion-main .bottom-txt {
+    width: 100%;
+    text-align: center;
+    margin-top: .24rem;
+    font-size: 16px;
+    /* font-family: SourceHanSansCN; */
+    font-weight: 600;
+    color: #000000;
+    opacity: 0.76;
+}
+
+.legion-main .bottom-txt2 {
+    width: 100%;
+    text-align: center;
+    margin-top: .06rem;
+    font-size: .2rem;
+    /* font-family: SourceHanSansCN; */
+    font-weight: 400;
+    color: #000000;
+    opacity: 0.76;
+}
+
+.legion-main .bottom-logo {
+    margin: 0 auto;
+    margin-top: .18rem;
+    width: 2.14rem;
+    height: .41rem;
+}
+
+.tanchuan {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999999;
+    display: none;
+}
+
+.tanchuan .tanchuan-rel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.tanchuan .tanchuan-rel .tanchuan-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5.12rem;
+    height: 1.76rem;
+}
+
+.tanchuan .tanchuan-rel .tanchuan-content .content-rel {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tanchuan .tanchuan-rel .tanchuan-content .content-rel .img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.tanchuan .tanchuan-rel .tanchuan-content .content-rel .img2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tanchuanyes .tanchuan-rel .tanchuan-content .content-rel .img2 {
+    width: 2.46rem;
+}
+
+.tanchuanno .tanchuan-rel .tanchuan-content .content-rel .img2 {
+    width: 2.34rem;
+}
